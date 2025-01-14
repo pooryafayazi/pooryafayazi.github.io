@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,30 +17,30 @@
 <meta name="author" content="">
 
 <!-- Site Icons -->
-<link rel="shortcut icon" href="{% static 'images/it-logo.png' %}" type="image/x-icon" />
-<link rel="apple-touch-icon" href="{% static 'images/it-logo.png' %}">
+<link rel="shortcut icon" href="static/images/it-logo.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="statics/images/it-logo.png">
 
 <!-- Design fonts -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- compress css -->
 <!-- Bootstrap core CSS -->
-<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="statics/css/bootstrap.css" rel="stylesheet">
 
 <!-- FontAwesome Icons core CSS -->
-<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="statics/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Custom CSS styles for this template -->
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="statics/css/style.css" rel="stylesheet">
 
 <!-- Responsive styles for this template -->
-<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<link href="statics/css/responsive.css" rel="stylesheet">
 
 <!-- Colors for this template -->
-<link href="{% static 'css/colors.css' %}" rel="stylesheet">
+<link href="statics/css/colors.css" rel="stylesheet">
 
 <!-- Version Tech CSS for this template -->
-<link href="{% static 'css/version/tech.css' %}" rel="stylesheet">
+<link href="statics/css/version/tech.css" rel="stylesheet">
  <!-- endcompress %} -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -57,35 +58,32 @@
                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="{% url 'homepage:index' %}"><img style="width:200px;height:50px;" src="{% static 'images/version/tech-logo-.png' %}" alt=""></a>
+                    <a class="navbar-brand" href="https://itmeter.ir"><img style="width:200px;height:50px;" src="statics/images/version/tech-logo-.png" alt=""></a>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'homepage:index' %}">Home</a>
+                                <a class="nav-link" href="https://itmeter.ir">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'blog:blog' %}">Blog</a>
+                                <a class="nav-link" href="/https://itmeter.ir/blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'homepage:about' %}">About</a>
+                                <a class="nav-link" href="https://itmeter.ir/about">About</a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'homepage:contact' %}">Contact Us</a>
+                                <a class="nav-link" href="https://itmeter.ir/contact">Contact Us</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav mr-2">
-                            {% if request.user.is_authenticated %}
-                            <li class="nav-item nav-link">Logged in as {{request.user.username}}</li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a></li>
-                            {% else %}
+                           
 
-                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:login' %}">Login</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:signup' %}">Signup</a></li>
-                            {% endif %}
+                            <li class="nav-item"><a class="nav-link" href="https://itmeter.ir/login">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://itmeter.ir/signup">Signup</a></li>
+                           
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'blog:rss' %}"><i class="fa fa-rss"></i></a>
+                                <a class="nav-link" href="#"><i class="fa fa-rss"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-android"></i></a>
@@ -134,7 +132,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
                 <div class="full">
-                    <img class="img-responsive" src="{% static 'images/5052628.jpg' %}" alt="#" />
+                    <img class="img-responsive" src="statics/images/5052628.jpg" alt="#" />
                 </div>
             </div>
 
@@ -163,7 +161,7 @@
 
             <div class="col-6">
                 <div class="center">
-                    <img class="responsive-img" src="{% static 'images/multilingual.png' %}" alt="#" />
+                    <img class="responsive-img" src="statics/images/multilingual.png" alt="#" />
                 </div>
                 <div class="center">
                     <h4>Language Proficiency</h4>
@@ -194,7 +192,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
                 <div class="full">
-                    <img class="img-responsive" id="about-project-pic" src="{% static 'images/project.png' %}" alt="#" />
+                    <img class="img-responsive" id="about-project-pic" src="statics/images/project.png" alt="#" />
                 </div>
             </div>
 
@@ -240,19 +238,19 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Python.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Python.png" alt="#"
                                         onclick="openModal(this.src, 'Python Programming')" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Advanced-Python.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Advanced-Python.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Django.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Django.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Git.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Git.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                             </div>
@@ -260,19 +258,19 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/OOP-Python.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/OOP-Python.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Machine-Learning.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Machine-Learning.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Advanced-Python.png' %}" alt="#"
+                                    <img class="img-responsive" src="staticsimages/Advanced-Python.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img class="img-responsive" src="{% static 'images/Git.png' %}" alt="#"
+                                    <img class="img-responsive" src="statics/images/Git.png" alt="#"
                                         onclick="openModal(this.src)" />
                                 </div>
                             </div>
@@ -356,7 +354,7 @@
             <div class="col-lg-7">
                 <div class="widget">
                     <div class="footer-text text-left">
-                        <a href="{% url 'homepage:index' %}"><img style="width:200px;height:50px;" src="{% static 'images/version/tech-logo-.png' %}"
+                        <a href="https://itmeter.ir"><img style="width:200px;height:50px;" src="statics/images/version/tech-logo-.png"
                                 alt="" class="img-fluid"></a>
                         <p>Tech Blog is a technology blog, we sharing marketing, news and gadget articles.</p>
                         <div class="social">
@@ -375,8 +373,8 @@
                         <hr class="invis">
 
                         <div class="newsletter-widget text-left">
-                            <form class="form-inline" method="post" action="{% url 'homepage:newsletter' %}">
-                                {% csrf_token %}
+                            <form class="form-inline" method="post" action="https://itmeter.ir/newsletter">
+                                
                                 <input name="email" type="email" class="form-control" placeholder="Enter your email address">
                                 <button type="submit" class="btn btn-primary">SUBMIT</button>
                             </form>
@@ -419,10 +417,10 @@
 
 ================================================== -->
 <!-- compress js -->
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/tether.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/custom3.js' %}"></script>
+<script src="statics/js/jquery.min.js"></script>
+<script src="statics/js/tether.min.js"></script>
+<script src="statics/js/bootstrap.min.js"></script>
+<script src="statics/js/custom3.js"></script>
 <!-- endcompress %}-->
 
 </body>
