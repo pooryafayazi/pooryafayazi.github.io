@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no , user-scalable=no">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+<!-- Site Metas -->
+<title>itmeter - Breaking News in a Digital World!</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="{% static 'images/it-logo.png' %}" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{% static 'images/it-logo.png' %}">
+
+<!-- Design fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- compress css -->
+<!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+<!-- FontAwesome Icons core CSS -->
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+
+<!-- Custom CSS styles for this template -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+<!-- Responsive styles for this template -->
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<!-- Colors for this template -->
+<link href="{% static 'css/colors.css' %}" rel="stylesheet">
+
+<!-- Version Tech CSS for this template -->
+<link href="{% static 'css/version/tech.css' %}" rel="stylesheet">
+ <!-- endcompress %} -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header class="tech-header header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage:index' %}"><img style="width:200px;height:50px;" src="{% static 'images/version/tech-logo-.png' %}" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'homepage:index' %}">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'blog:blog' %}">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'homepage:about' %}">About</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'homepage:contact' %}">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-2">
+                            {% if request.user.is_authenticated %}
+                            <li class="nav-item nav-link">Logged in as {{request.user.username}}</li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a></li>
+                            {% else %}
+
+                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:login' %}">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'accounts:signup' %}">Signup</a></li>
+                            {% endif %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'blog:rss' %}"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-android"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-apple"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div><!-- end container-fluid -->
+        </header><!-- end market-header -->
+<!--start education section-->
+<!-- section -->
+<div class="innerpage_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>My Resume</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section -->
+
+<div class="section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full center">
+                    <div class="heading_main text_align_center">
+                        <h2><span class="theme_color">Academic </span>Background</h2>
+                        <p class="large">in Computer Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- section -->
+<div class="section layout_padding theme_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                <div class="full">
+                    <img class="img-responsive" src="{% static 'images/5052628.jpg' %}" alt="#" />
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                <h3 class="small_heading">Bachelor's degree in Computer Engineering</h3>
+                <br><br>
+                <p>I hold a Bachelor's degree in Computer Engineering, which I completed in 2021 from Shomal University.
+                    My academic performance was commendable, as I graduated with an impressive GPA of 18.67. Throughout
+                    my studies, I developed a strong foundation in various areas of computer science and engineering. I
+                    am passionate about technology and eager to apply my knowledge in real-world applications. My
+                    education has equipped me with the skills necessary to excel in the field of computer engineering.
+                    
+                </p><br>
+                <!-- <a href="#" class="hvr-radial-out button-theme">Skills</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section -->
+
+ 
+<!-- section -->
+<div class="section layout_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-6">
+                <div class="center">
+                    <img class="responsive-img" src="{% static 'images/multilingual.png' %}" alt="#" />
+                </div>
+                <div class="center">
+                    <h4>Language Proficiency</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-10 offset-lg-1 margin-top_30 gray-fonts">
+                <div class="full text_align_center">
+                    <p>I am proficient in English at a B2 level and achieved a score of 6.0 in the IELTS exam in 2024.
+                        Additionally, I received admission to the University of Messina in Italy for a Data Science
+                        program, where I participated in online classes for one semester. During this time, I also
+                        learned Italian and reached an A2 level of proficiency. This experience not only enhanced my
+                        language skills but also deepened my understanding of data science concepts. I am excited to
+                        continue my studies and improve my language abilities further.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style>.responsive-img {width: 35% !important;
+    height: auto !important;}</style>
+<!-- end section -->
+
+<!-- section -->
+<div class="section layout_padding theme_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                <div class="full">
+                    <img class="img-responsive" id="about-project-pic" src="{% static 'images/project.png' %}" alt="#" />
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                <h3 class="small_heading">Bachelor's Project:</h3>
+                <h4>Online service - buying and selling used CARS</h4>
+                <p>During my Bachelor's degree, I learned Python and developed a comprehensive online car marketplace
+                    for my final project using PHP, HTML, CSS, JavaScript, and SQL Server. The website features both an
+                    admin panel and a user interface for submitting vehicle sale requests. I implemented various
+                    functionalities to enhance user experience and streamline the buying and selling process. After
+                    completing the project, I received a perfect score of 20 out of 20. This experience not only
+                    strengthened my programming skills but also deepened my understanding of web development and
+                    database management.</p>
+                <!-- <a href="#" class="hvr-radial-out button-theme">Education</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section -->
+
+
+
+<!-- section -->
+<div class="section layout_padding">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full center margin-bottom_30">
+                    <div class="heading_main text_align_center">
+                        <h2><span class="theme_color">Certificates</span> of Maktabkhooneh</h2>
+                        <p class="large">Resume</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Python.png' %}" alt="#"
+                                        onclick="openModal(this.src, 'Python Programming')" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Advanced-Python.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Django.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Git.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/OOP-Python.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Machine-Learning.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Advanced-Python.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <img class="img-responsive" src="{% static 'images/Git.png' %}" alt="#"
+                                        onclick="openModal(this.src)" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function openModal(imageSrc) {
+                            document.getElementById('modalImage').src = imageSrc;
+                            $('#imageModal').modal('show');
+                        }</script>
+                    <style>
+                        .modal-body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            padding: 0;
+                        }
+                        #imageModal img {
+                            max-width: 140%;
+                            height: auto;
+                        }
+
+                        .modal-content {
+                            background-color: transparent !important;
+                        }
+                    </style>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog"
+                        aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img id="modalImage" class="img-fluid" src="" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-lg-12 gray-fonts">
+                <p>I have completed five courses on the Maktabkhooneh website, which are: Python,
+                    Advanced Python, Object-Oriented Programming in Python, Git, and Machine Learning. Currently, I am
+                    enrolled in four additional courses, including Django, Advanced Django, Docker, and SQL Server
+                    Database. Each of these courses has provided me with valuable knowledge and skills in programming
+                    and software development. I have gained a solid foundation in Python and its advanced concepts.
+                    Additionally, I am excited to learn about web development with Django and containerization with
+                    Docker. I believe these skills will significantly enhance my capabilities as a developer.</p>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="full center">
+                    <!--  <a href="#" class="hvr-radial-out button-theme">Education</a> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- end section -->
+
+<!--end education section-->
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="widget">
+                    <div class="footer-text text-left">
+                        <a href="{% url 'homepage:index' %}"><img style="width:200px;height:50px;" src="{% static 'images/version/tech-logo-.png' %}"
+                                alt="" class="img-fluid"></a>
+                        <p>Tech Blog is a technology blog, we sharing marketing, news and gadget articles.</p>
+                        <div class="social">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i
+                                    class="fa fa-google-plus"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i
+                                    class="fa fa-pinterest"></i></a>
+                        </div>
+
+                        <hr class="invis">
+
+                        <div class="newsletter-widget text-left">
+                            <form class="form-inline" method="post" action="{% url 'homepage:newsletter' %}">
+                                {% csrf_token %}
+                                <input name="email" type="email" class="form-control" placeholder="Enter your email address">
+                                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                            </form>
+                        </div><!-- end newsletter -->
+                    </div><!-- end footer-text -->
+                </div><!-- end widget -->
+            </div><!-- end col -->
+
+
+            <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                <div class="widget">
+                    <h2 class="widget-title">Copyrights</h2>
+                    <div class="link-widget">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Write for us</a></li>
+                            <li><a href="#">Trademark</a></li>
+                            <li><a href="#">License & Help</a></li>
+                        </ul>
+                    </div><!-- end link-widget -->
+                </div><!-- end widget -->
+            </div><!-- end col -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <div class="copyright">&copy; Tech Blog. Design: <a href="http://html.design">HTML Design</a>.
+                </div>
+            </div>
+        </div>
+    </div><!-- end container -->
+</footer><!-- end footer -->        
+
+<div class="dmtop" style="overflow: hidden;">Scroll to Top</div>
+
+</div><!-- end wrapper -->
+
+
+================================================== -->
+<!-- compress js -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/tether.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/custom3.js' %}"></script>
+<!-- endcompress %}-->
+
+</body>
+
+</html>
